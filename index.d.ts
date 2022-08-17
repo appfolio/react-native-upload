@@ -139,5 +139,6 @@ declare module '@appfolio/react-native-upload' {
     static getFileInfo(path: string): Promise<FileInfo>;
     static cancelUpload(uploadId: uploadId): Promise<boolean>;
     static canSuspendIfBackground(): Promise<void>;
+    static initUrlSession(): void;
   }
 }

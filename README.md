@@ -223,6 +223,12 @@ Adds an event listener, possibly confined to a single upload.
 
 Returns an [EventSubscription](https://github.com/facebook/react-native/blob/master/Libraries/vendor/emitter/EmitterSubscription.js). To remove the listener, call `remove()` on the `EventSubscription`.
 
+### initUrlSession
+
+Initialize `NSURLSession`. iOS only.
+
+For uploads completed by iOS while the app is dead, the system will deliver the results once the `NSURLSession` is instantiated on the next app launch. Call this function when your JavaScript code has added proper event listeners and is ready to receive these events. If you don't call this function, the `NSURLSession` will be instantiated after 30 seconds or when you first call `startUpload`.
+
 ## Events
 
 ### progress

@@ -125,10 +125,17 @@ export const canSuspendIfBackground = () => {
   }
 };
 
+export const initUrlSession = () => {
+  if (Platform.OS === 'ios') {
+    NativeModule.initUrlSession();
+  }
+};
+
 export default {
   startUpload,
   cancelUpload,
   addListener,
   getFileInfo,
   canSuspendIfBackground,
+  initUrlSession,
 };
