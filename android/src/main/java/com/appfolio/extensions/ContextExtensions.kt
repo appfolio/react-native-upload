@@ -1,6 +1,12 @@
 package com.appfolio.extensions
 
 import android.content.Context
+import android.content.Context.RECEIVER_NOT_EXPORTED
+import android.annotation.SuppressLint
+import android.content.BroadcastReceiver
+import android.content.IntentFilter
+import android.os.Build.VERSION.SDK_INT
+
 import com.appfolio.work.TaskCompletionNotifier
 import com.appfolio.work.UploadManager
 import net.gotev.uploadservice.UploadTask
@@ -59,5 +65,14 @@ fun Context.getUploadTask(
             }
         )
         null
+    }
+}
+
+@SuppressLint("UnspecifiedRegisterReceiverFlag")
+fun Context.registerReceiverCompat(receiver: BroadcastReceiver, filter: IntentFilter) {
+    if (SDK_INT >= 34) {
+        registerReceiver(receiver, filter, RECEIVER_NOT_EXPORTED)
+    } else {
+        registerReceiver(receiver, filter)
     }
 }
