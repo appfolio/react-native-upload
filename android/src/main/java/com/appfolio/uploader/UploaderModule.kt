@@ -17,6 +17,7 @@ import net.gotev.uploadservice.UploadServiceConfig.httpStack
 import net.gotev.uploadservice.UploadServiceConfig.initialize
 import net.gotev.uploadservice.data.UploadNotificationConfig
 import net.gotev.uploadservice.data.UploadNotificationStatusConfig
+import net.gotev.uploadservice.observer.request.GlobalRequestObserver
 import net.gotev.uploadservice.okhttp.OkHttpStack
 import okhttp3.OkHttpClient
 import java.io.File
@@ -186,7 +187,7 @@ class UploaderModule(val reactContext: ReactApplicationContext) : ReactContextBa
 
     if(!isGlobalRequestObserver) {
       isGlobalRequestObserver = true
-      ModifiedGlobalRequestObserver(application, GlobalRequestObserverDelegate(reactContext))
+      GlobalRequestObserver(application, GlobalRequestObserverDelegate(reactContext))
     }
 
     val url = options.getString("url")

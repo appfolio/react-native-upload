@@ -70,6 +70,8 @@ fun Context.getUploadTask(
 
 @SuppressLint("UnspecifiedRegisterReceiverFlag")
 fun Context.registerReceiverCompat(receiver: BroadcastReceiver, filter: IntentFilter) {
+    // Apps targeting SDK 34+: Runtime-registered broadcasts receivers must specify export behavior
+    // @link: https://developer.android.com/about/versions/14/behavior-changes-14#runtime-receivers-exported
     if (SDK_INT >= 34) {
         registerReceiver(receiver, filter, RECEIVER_NOT_EXPORTED)
     } else {
