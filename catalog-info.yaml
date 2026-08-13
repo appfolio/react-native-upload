@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: react-native-upload
+  description: "Upload files in your React Native app even while it's backgrounded. Supports Android and iOS, including camera roll assets."
+spec:
+  type: library
+  lifecycle: stable
+  owner: CODEOWNERS
