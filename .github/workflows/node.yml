@@ -16,6 +16,9 @@ jobs:
       with:
         node-version: 12
 
+    - name: use public registry config
+      run: cp .npmrc-public .npmrc
+
     - name: install node_modules
       run: yarn install --frozen-lockfile
 
