@@ -1,0 +1,6 @@
+registry=https://registry.npmjs.org/
+
+@appfolio:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=${GITHUB_NPM_TOKEN}
+
+cache=tmp/node_cache

@@ -19,6 +19,9 @@ jobs:
       with:
         node-version: 12
 
+    - name: Use public registry config
+      run: cp .npmrc-public .npmrc
+
     - name: Release to NPM
       if: github.ref == 'refs/heads/master'
       env:
