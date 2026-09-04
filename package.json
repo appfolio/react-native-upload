@@ -43,7 +43,8 @@
     "flatted": "^3.4.2",
     "tar": "^7.5.11",
     "minimatch": "^5.1.8",
-    "glob-parent": "^5.1.2"
+    "glob-parent": "^5.1.2",
+    "npm": "^8.11.0"
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "^0.0.7",
