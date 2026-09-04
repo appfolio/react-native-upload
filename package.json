@@ -44,7 +44,8 @@
     "tar": "^7.5.11",
     "minimatch": "^5.1.8",
     "glob-parent": "^5.1.2",
-    "npm": "^8.11.0"
+    "npm": "^8.11.0",
+    "ansi-regex": "^5.0.1"
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "^0.0.7",
