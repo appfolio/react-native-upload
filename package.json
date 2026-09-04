@@ -35,7 +35,8 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "resolutions": {
-    "js-yaml": "^3.15.1"
+    "js-yaml": "^3.15.1",
+    "brace-expansion": "^2.1.2"
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "^0.0.7",
