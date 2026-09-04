@@ -41,7 +41,8 @@
     "lodash": "^4.17.21",
     "handlebars": "^4.7.9",
     "flatted": "^3.4.2",
-    "tar": "^7.5.11"
+    "tar": "^7.5.11",
+    "minimatch": "^5.1.8"
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "^0.0.7",
