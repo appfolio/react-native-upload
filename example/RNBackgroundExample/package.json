@@ -39,7 +39,7 @@
     "jest-circus": "26.x.x",
     "sanitize-filename": "^1.6.1",
     "metro-react-native-babel-preset": "^0.59.0",
-    "multer": "^1.4.2",
+    "multer": "^2.2.0",
     "react-test-renderer": "16.13.1",
     "uuid": "^3.3.3"
   },
