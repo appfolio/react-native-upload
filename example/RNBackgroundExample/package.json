@@ -33,7 +33,7 @@
     "content-type": "^1.0.4",
     "detox": "17.4.4",
     "eslint": "^6.6.0",
-    "express": "^4.17.1",
+    "express": "^4.20.0",
     "fs": "^0.0.1-security",
     "jest": "26.x.x",
     "jest-circus": "26.x.x",
