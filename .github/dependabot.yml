@@ -1,0 +1,15 @@
+---
+version: 2
+registries:
+  jfrog-npm:
+    type: npm-registry
+    url: https://appfolio.jfrog.io/artifactory/api/npm/appfolio-apm-mobile-npm/
+    jfrog-oidc-provider-name: appfolio-github-oidc
+    audience: jfrog-appfolio
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 0
+    registries: "*"
