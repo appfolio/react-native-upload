@@ -88,8 +88,5 @@
       ],
       "@semantic-release/release-notes-generator"
     ]
-  },
-  "dependencies": {
-    "brace-expansion": "^2.1.2"
   }
 }
